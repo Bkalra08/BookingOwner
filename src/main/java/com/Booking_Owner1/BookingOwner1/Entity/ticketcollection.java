@@ -13,7 +13,7 @@ import lombok.NoArgsConstructor;
 public class ticketcollection {
 	@Id
 	private String ticketNumber;
-	private String ticketStatus;
+	private String ticketStatus; //to be changed as Boolean
 	private String ticketId;
 	private String OwnerId;
 	private String userId;

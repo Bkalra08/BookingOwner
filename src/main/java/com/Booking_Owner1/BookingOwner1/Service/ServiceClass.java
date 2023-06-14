@@ -66,6 +66,13 @@ public class ServiceClass implements ServiceClassInterface {
         ownerDetails.getDetailsofowner().setCarSpace(carSpace);
         dao.save(ownerDetails);
     }
+    
+    @Override
+    public Details getOwnerDetails(String ownerId) {
+        OwnerDetails ownerDetails = findById(ownerId);
+        return ownerDetails.getDetailsofowner();
+    }
+
     @Override
     public List<ticketcollection> getAllTicketsByOwnerId(String ownerId) {
         OwnerDetails ownerDetails = findById(ownerId);

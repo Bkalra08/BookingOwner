@@ -19,4 +19,5 @@ public interface ServiceClassInterface {
 	List<ticketcollection> getAllTicketsByOwnerId(String ownerId);
 	void addTicketToOwner(String ownerId, ticketcollection ticket);
 	ticketcollection getTicketDetails(String ownerId, String ticketId);
+	Details getOwnerDetails(String ownerId);
 }
