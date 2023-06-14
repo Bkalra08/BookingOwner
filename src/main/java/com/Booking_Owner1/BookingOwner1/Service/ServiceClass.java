@@ -90,7 +90,7 @@ public class ServiceClass implements ServiceClassInterface {
         List<ticketcollection> tickets = ownerDetails.getTickets();
         
         for (ticketcollection ticket : tickets) {
-            if (ticket.getTicketId().equals(ticketId)) {
+            if (ticket.getTicketNumber().equals(ticketId)) {
                 return ticket;
             }
         }
